@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class= "bg-slate-950 text-slate-200 justify-center flex flex-col items-center md:mt-48">
+    <div class="card py-12 px-6 justify-center flex flex-col w-1/2 bg-slate-900 rounded-lg">
+        <div class="m-auto">
+            <h1 class="text-center font-bold text-3xl">Change Password</h1>
+        </div>
+        <div class="input mt-10 mx-auto">
+            <form action="/forgot" method="post">
+                <div>
+                    <label for="username">Username</label>
+                    <div class="mt-2">
+                        <input type="text" name="username" class="rounded-md ring-inset pl-2 ring-offset-neutral-800 ring-1 py-2 bg-white/25 w-full">
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <label for="password">New Password</label>
+                    <div class="mt-2">
+                        <input type="password" name="password" class="rounded-md ring-inset ring-offset-neutral-800 ring-1 py-2 pl-2 bg-white/25 w-80">
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <button type="submit" class="font-semibold text-sm py-3 bg-indigo-500 rounded-md justify-center flex w-full">Submit</button>
+                </div>
+            </form>
+            <p class="mt-10 text-sm text-center">Back to login page <a href="/login" class="font-semibold decoration-inherit text-indigo-600">Log In</a></p>
+        </div>
+    </div>
+</body>
+</html>
